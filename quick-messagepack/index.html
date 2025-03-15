@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quick MessagePack</title>
+    </head>
+    <body>
+        <h1>Quick MessagePack</h1>
+        <p>Quick online converter between JSON and MessagePack (<a href="https://msgpack.org/">https://msgpack.org/</a>).</p>
+        <div>
+            <div>
+                <h2>JSON to MessagePack</h2>
+                <input type="file" name="json" id="json" accept="application/json" />
+            </div>
+
+            <div>
+                <h2>MessagePack to JSON</h2>
+                <input type="file" name="msgp" id="msgp" accept=".msgp,.msgpack,.messagepack,.dat" />
+            </div>
+        </div>
+        <div id="files" hidden>
+            <h2>Converted Files</h2>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
